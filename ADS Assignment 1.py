@@ -13,7 +13,7 @@ def line(x):
     selected countries.
 
     Args:
-    x: pandas dataframe containing data for selected countries and years.
+    x: pandas dataframe containing data for selected countries and years from 2010 to 2021.
 
     '''
     
@@ -49,7 +49,7 @@ export_data = pd.read_excel(r'C:\Users\Diraj\Downloads\Masters - DS\Applied DS- 
 # Calling the line function with the loaded data
 line(export_data)
 
-# Function to plot horizontal bar chart for top 20 batsman's
+# Function to plot horizontal bar chart for top 20 batsman
 
 def top_batsman(a):
     

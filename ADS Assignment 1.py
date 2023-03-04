@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def line(x):
     
-    
+ 
     '''
     Plots a line graph for annual % growth of exports of goods & service for 
     selected countries.

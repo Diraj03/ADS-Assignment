@@ -15,8 +15,6 @@ def line(x):
     Args:
     x: pandas dataframe containing data for selected countries and years.
 
-    Returns:
-    None
     '''
     
     plt.figure(figsize=(30, 16.5))
@@ -38,6 +36,7 @@ def line(x):
               fontweight = 'bold')
     plt.legend(bbox_to_anchor=(0.6,0.5), facecolor='pink', framealpha=0.5,
                fontsize='x-large')
+    plt.savefig('line_plot.png')
     plt.show()
     
     return
@@ -63,9 +62,7 @@ def top_batsman(a):
     a: pandas dataframe containing data for top 100 batsmen and their ratings,
     runs,matches played , innings,high scores, half-century scores and century
     scores.
-
-    Returns:
-    None
+    
     '''
     # Sorting the data by rating in descending order
     a = a.sort_values('rating', ascending=False)
@@ -84,6 +81,7 @@ def top_batsman(a):
               fontweight ='bold')
     plt.legend(loc='upper right', facecolor='pink', framealpha=0.5, 
                fontsize='x-large')
+    plt.savefig('bar_plot.png')
     plt.show()
     
     return
@@ -108,9 +106,7 @@ def batsman_average(x):
     x: pandas dataframe containing data for top 100 batsmen and their ratings,
     runs,matches played ,
     innings,high scores, half-century scores and century scores.
-
-    Returns:
-    None
+    
     '''
     plt.figure(figsize=(15, 8))
     ##plotting a scatter plot for strike rate and average based on their innings
@@ -125,6 +121,7 @@ def batsman_average(x):
               fontweight='bold')
     plt.legend(loc='upper right', facecolor='pink', framealpha=0.5,
                fontsize='x-large')
+    plt.savefig('scatter_plot.png')
     plt.show()
     
     return
